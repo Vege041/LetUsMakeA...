@@ -1,0 +1,5 @@
+add	≤‚ ‘1	week=4	time=12:00:00
+none
+add	≤‚ ‘2
+none
+add	≤‚ ‘3	week=5	time=13:00:00
