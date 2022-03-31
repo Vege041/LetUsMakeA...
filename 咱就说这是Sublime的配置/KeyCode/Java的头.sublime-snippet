@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+import java.util.*;
+
+
+public class Main
+{
+	
+	static Scanner reader=new Scanner(System.in);
+	
+	public static void main(String[]args)
+	{
+		;
+		System.out.println("");
+		return;
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Java</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.C</scope>-->
+</snippet>

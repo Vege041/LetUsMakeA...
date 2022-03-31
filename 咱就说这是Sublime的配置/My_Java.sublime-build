@@ -1,0 +1,16 @@
+{
+	"encoding":"utf-8",
+	"working_dir":"$file_path",
+	"cmd":"javac -encoding gbk -d . $file",
+	"file_regex":"^(..[^:]*):([0-9]+):?([0-9]+)?:?(.*)$",
+	"shell":true,
+	"selector":"source.java",
+	"variants":
+	[
+		{
+			"name":"Run in Steps",
+			"shell":true,
+			"cmd":"start cmd /c \"javac -encoding gbk -d . $file &java $file_base_name &echo / = = = E N D = = =/ & pause\""
+		}
+	]
+}

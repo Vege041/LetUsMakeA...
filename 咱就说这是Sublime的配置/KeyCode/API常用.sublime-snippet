@@ -1,0 +1,54 @@
+<snippet>
+	<content><![CDATA[
+#include<bits/stdc++.h>
+#include<conio.h>
+#include<windows.h>
+
+using namespace std;
+
+HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+inline void set_position(int x=0, int y=0){
+SetConsoleCursorPosition(hConsole,COORD{(short)(x<<1),(short)(y)});}
+inline void set_color(int a=15,int b=0){
+SetConsoleTextAttribute(hConsole,(a%=16)+(b%=16)*16);}
+
+
+
+
+
+int main()
+{
+	while(1)
+	{
+		Sleep(3000);
+		mouse_event(MOUSEEVENTF_LEFTDOWN|MOUSEEVENTF_LEFTUP,0,0,0,0);
+		Sleep(500);
+		mouse_event(MOUSEEVENTF_LEFTDOWN|MOUSEEVENTF_LEFTUP,0,0,0,0);
+		cout<<"RRR"<<endl;
+	}
+
+
+	set_position(0,25);
+	set_color();
+	return 0;
+}
+
+// set_position(0,25);
+// set_color();
+// Sleep(2000);
+// mouse_event(MOUSEEVENTF_LEFTDOWN,0,0,0,0);
+// mouse_event(MOUSEEVENTF_LEFTTDOWN|MOUSEEVENTF_LEFTUP,0,0,0,0);
+// mouse_event(MOUSEEVENTF_ABSOLUTE|MOUSEEVENTF_MOVE,500,500,0,0);
+
+
+/*
+
+
+
+*/
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>API</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.C</scope>-->
+</snippet>

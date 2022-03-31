@@ -1,0 +1,24 @@
+{
+	"encoding":"gbk",
+	"working_dir":"$file_path",
+	"shell_cmd":"g++ -std=c++17 -Wall \"$file_name\" -o \"${file_base_name}.exe\" && start cmd /c \"\"${file_base_name}.exe\"&echo / = = = E N D = = = /&pause\"",
+	"file_regex":"^(..[^:]*):([0-9]+):?([0-9]+)?:?(.*)$",
+	"shell":true,
+	"selector":"source.c++",
+	"variants":
+	[
+		{
+			"name":"Run Only",
+			"shell_cmd":"start cmd /c \"\"${file_base_name}.exe\"&echo / = = = E N D = = = /&pause\"",
+		},
+		{
+			"name":"Compile - Socket",
+			"shell_cmd":"g++ -std=c++17 -Wall \"$file_name\" -o \"${file_base_name}.exe\" -lwsock32 && start cmd /c \"\"${file_base_name}.exe\"&echo / = = = E N D = = = /&pause\"",
+		},
+		{
+			"name":"Compile - Graphcs",
+			// -lgraphics64 -luuid -lmsimg32 -lgdi32 -limm32 -lole32 -loleaut32
+			"shell_cmd":"\"C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\bin\\g++.exe\" -std=c++11 \"$file_name\" -o \"${file_base_name}.exe\" -lgraphics64 -luuid -lmsimg32 -lgdi32 -limm32 -lole32 -loleaut32 -lwinmm -lgdiplus && start cmd /c \"\"${file_base_name}.exe\"&echo / = = = E N D = = = /&pause\"",
+		},
+	]
+}

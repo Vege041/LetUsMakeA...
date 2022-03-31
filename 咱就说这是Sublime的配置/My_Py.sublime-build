@@ -1,0 +1,8 @@
+{
+	"encoding":"gbk",
+	"working_dir":"$file_path",
+	"shell_cmd":"start cmd /c \"python \"$file_name\"&echo / = = = E N D = = =/ & pause\"",
+	"file_regex":"^(..[^:]*):([0-9]+):?([0-9]+)?:?(.*)$",
+	"shell":true,
+	"selector":"source.python",
+}

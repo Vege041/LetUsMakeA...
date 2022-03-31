@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+
+
+#define scanf_i(val)		scanf("%d",&val)
+#define scanf_ll(val)		scanf("%lld",&val)
+#define scanf_d(val)		scanf("%lf",&val)
+#define scanf_c(val)		val=getchar()
+#define scanfln_i(val)		scanf("%d",&val)getchar()
+#define scanfln_ll(val)		scanf("%lld",&val)getchar()
+#define scanfln_d(val)		scanf("%lf",&val);getchar()
+#define print_i(val)		printf("%d",val)
+#define print_ll(val)		printf("%lld",val)
+#define print_d(val,k)		printf("%."#k"lf",val)
+#define println_i(val)		printf("%d\n",val)
+#define println_ll(val)		printf("%lld\n",val)
+#define println_d(val,k)	printf("%."#k"lf\n",val)
+#define print_c(val)		putchar(val)
+
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>CIO</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.C</scope>-->
+</snippet>

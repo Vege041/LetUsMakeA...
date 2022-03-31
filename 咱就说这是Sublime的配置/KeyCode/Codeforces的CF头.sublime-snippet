@@ -1,0 +1,42 @@
+<snippet>
+	<content><![CDATA[
+#pragma comment(linker, "/STACK:102400000,102400000")
+#pragma GCC optimize ("O2")
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+//typedef __int64 i64;
+
+
+
+#define putt(x) cout<<#x<<" = "<<x<<endl;
+#define MAX 100007
+const ll MOD = 1000000007;	//模数,常用的还有998244353;
+const double eps = 1e-8;	//保留6位小数的精度,保留k位小数时一般取1e-(k+2);
+
+
+
+
+
+int main()
+{
+	//ios_base::sync_with_stdio(0);
+	//cin.tie(0);
+	
+	ll n,anss=0;
+	scanf("%lld",&n);
+	
+	printf("%lld\n",anss);
+
+	return 0;
+}
+/*
+
+*/
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>CF</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.C</scope>-->
+</snippet>

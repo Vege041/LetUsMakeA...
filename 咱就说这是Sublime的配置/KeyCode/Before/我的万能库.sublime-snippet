@@ -1,0 +1,94 @@
+<snippet>
+	<content><![CDATA[
+#include<cstdio>
+#include<iostream>
+#include<cstring>
+#include<cstdarg>
+//#include<bits\stdc++.h>
+
+using namespace std;
+
+#define For(i,a,b) for(int i=a;i<=b;i++)
+
+template <typename T_>
+T_ abs(T_ val)
+{return val<0?-val:val;}
+template <typename T_>
+void swp(T_&a,T_&b)
+{a^=b;b^=a;a^=b;return;}
+template <typename T_>
+T_ maxx(T_ a,T_ b)
+{return a>b?a:b;}
+template <typename T_>
+T_ minn(T_ a,T_ b)
+{return a<b?a:b;}
+template <typename T_=int>
+T_ input(){
+ char ch;bool neg=false;
+ while((ch=getchar())<'0'||ch>'9')
+   neg=ch=='-';
+ T_ ret=ch-'0';
+ while((ch=getchar())>='0'&&ch<='9')
+   ret=(ret<<3)+(ret<<1)+ch-'0';
+ return neg?-ret:ret;
+}
+template <typename T_>
+void output_v(T_ val){
+ if(val>9)
+   output_v(val/10);
+ else if(val<0)
+ {
+ 	putchar('-');
+ 	output_v(-val);
+ 	return;
+ }
+ putchar(val%10+'0');
+ return;
+}
+// template <typename T_>
+void output(const char*op,...){
+	va_list arg_ptr;
+	va_start(arg_ptr,op);
+	for(int i=0,ii=strlen(op);i<ii;i++)
+	{
+		if(op[i]=='%')
+		{
+			switch(op[++i])
+			{
+				case 'i':
+				case 'd':
+				case 'l':
+					output_v(va_arg(arg_ptr,long long));
+					break;
+				case 'f':
+					cout<<va_arg(arg_ptr,double);
+					break;
+				default:
+					puts("\n==================\n|[OUTPUT ERROR!!]|\n==================\n");
+					break;
+			}
+			continue;
+		}
+		putchar(op[i]);
+	}
+	return;
+}
+
+/* 041's Bank - Lv 0.0.1.0 */
+
+
+
+
+;
+
+int main()
+{
+	;
+	return 0;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Bank_of_041</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.C</scope>-->
+</snippet>

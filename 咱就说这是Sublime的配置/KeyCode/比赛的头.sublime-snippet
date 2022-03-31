@@ -1,0 +1,65 @@
+<snippet>
+	<content><![CDATA[
+//#pragma comment(linker, "/STACK:102400000,102400000")
+#include<iostream>
+//#include<cstdio>
+//#include<bits\stdc++.h>
+
+//using namespace std;
+
+#define FOR(i,a,b) for(int i=a;i<=b;i++)
+
+template <typename T_>
+T_ abs(T_ val)
+{return val<0?-val:val;}
+template <typename T_>
+void swp(T_&a,T_&b)
+{a^=b;b^=a;a^=b;return;}
+template <typename T_>
+T_ maxx(T_ a,T_ b)
+{return a>b?a:b;}
+template <typename T_>
+T_ minn(T_ a,T_ b)
+{return a<b?a:b;}
+//template <typename T_=int>
+int input(){
+ char ch;bool neg=false;
+ while((ch=getchar())<'0'||ch>'9')
+   neg=ch=='-';
+ int ret=ch-'0';
+ while((ch=getchar())>='0'&&ch<='9')
+   ret=(ret<<3)+(ret<<1)+ch-'0';
+ return neg?-ret:ret;
+}
+template <typename T_>
+void output(T_ val){
+ if(val>9)
+   output(val/10);
+ else if(val<0)
+ {
+ 	putchar('-');
+ 	output(-val);
+ 	return;
+ }
+ putchar(val%10+'0');
+ return;
+}
+
+
+
+
+
+;
+
+
+int main()
+{
+	;
+	return 0;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>BBB</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.C</scope>-->
+</snippet>

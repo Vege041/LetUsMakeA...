@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[
+
+
+typedef pair<int,int> pii;
+typedef pair<ll,ll> pll;
+#define fi first
+#define se second
+
+typedef map<int,int> mii;
+typedef map<ll,ll> mll;
+typedef multiset<int> msii;
+typedef multiset<ll> msll;
+typedef set<int> sii;
+typedef set<ll> sll;
+typedef set<pii> spii;
+typedef set<pll> spll;
+typedef vector<int> vii;
+typedef vector<ll> vll;
+typedef vector<pii> vpii;
+typedef vector<pll> vpll;
+#define it_ iterator
+#define r_it_ reverse_iterator
+
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>STL</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.C</scope>-->
+</snippet>

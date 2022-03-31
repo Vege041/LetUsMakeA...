@@ -1,0 +1,51 @@
+<snippet>
+	<content><![CDATA[
+#include<bits/stdc++.h>
+#include<conio.h>
+#include<windows.h>
+
+using namespace std;
+
+HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+inline void set_position(int x=0, int y=0){
+SetConsoleCursorPosition(hConsole,COORD{(short)(x<<1),(short)(y)});}
+inline void set_color(int a=15,int b=0){
+SetConsoleTextAttribute(hConsole,(a%=16)+(b%=16)*16);}
+enum Color_
+{
+	Color_black, Color_blue, Color_green, Color_lake_blue,
+	Color_red, Color_puerple, Color_yellow, Color_white,
+	Color_gray, Color_light_blue, Color_light_green, Color_cyon,
+	Color_light_red, Color_mauve, Color_light_yellow, Color_bright_white
+	/*
+	 Color XX : 
+		 Dark           Light
+		0 = 黑色       8 = 灰色
+		1 = 蓝色       9 = 淡蓝色
+		2 = 绿色       A = 淡绿色
+		3 = 湖蓝色     B = 淡浅绿色
+		4 = 红色       C = 淡红色
+		5 = 紫色       D = 淡紫色
+		6 = 黄色       E = 淡黄色
+		7 = 白色       F = 亮白色
+	*/
+};
+
+
+;
+
+
+int main()
+{
+	;
+
+	set_position(0,25);
+	set_color();
+	return 0;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>API</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.C</scope>-->
+</snippet>
